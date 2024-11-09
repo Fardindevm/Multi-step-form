@@ -70,7 +70,7 @@ const SelectPlan = ({ formData, updateFormData }) => {
             />
             <label 
               htmlFor={planOption.name}
-              className={`flex 2xl:flex-col md:max-h-[70px] items-center 2xl:items-start py-4 2xl:py-0 pl-5 2xl:min-h-[180px] border rounded-lg cursor-pointer transition duration-300 hover:border-[var(--purplish-blue)] ${
+              className={`flex 2xl:flex-col md:max-h-[70px] xl:max-h-none items-center 2xl:items-start py-4 2xl:py-0 pl-5 2xl:min-h-[180px] border rounded-lg cursor-pointer transition duration-300 hover:border-[var(--purplish-blue)] ${
                 plan && plan.name === planOption.name ? 'border-[var(--purplish-blue)] bg-[var(--alabaster)]' : ''
               }`}
             >
@@ -90,7 +90,7 @@ const SelectPlan = ({ formData, updateFormData }) => {
                 </>
               )}
               </div>
-              {billing && <p className='2xl:hidden xl:text-[11px] mr-5 mt-3 text-[var(--marine-blue)] text-sm mb-4'>2 months free</p>}
+              {billing && <p className='2xl:hidden mr-5 mt-3 text-[var(--marine-blue)] text-sm mb-4'>2 months free</p>}
             </label>
           </div>
         ))}

@@ -29,7 +29,7 @@ const PersonalInfo = ({ formData, updateFormData, errors, setErrors }) => {
           const digitsOnly = value ? value.replace(/\D/g, '') : '';
           if (digitsOnly.length < 10) {
             error = "Phone number is too short";
-          } else if (digitsOnly.length > 11) {
+          } else if (digitsOnly.length > 12) {
             error = "Phone number is too long";
           }
           break;

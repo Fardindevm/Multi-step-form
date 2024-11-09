@@ -72,7 +72,7 @@ function App() {
       newErrors.phone = "Phone number must contain only numbers";
     } else if (phone.replace(/\D/g, '').length < 10) {
       newErrors.phone = "Phone number is too short";
-    } else if (phone.replace(/\D/g, '').length > 11) {
+    } else if (phone.replace(/\D/g, '').length > 12) {
       newErrors.phone = "Phone number is too long";
     }
 
