@@ -117,7 +117,6 @@ const PersonalInfo = ({ formData, updateFormData, errors, setErrors }) => {
         </div>
         <div>
           <div className="flex justify-between">
-            {console.log(errors)}
             <label htmlFor="phone" className='text-[var(--marine-blue)]'>Phone Number</label>
             {errors.phone && <span className="text-[var(--strawberry-red)] text-sm">{errors.phone}</span>}
           </div>
