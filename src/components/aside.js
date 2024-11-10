@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Aside = ({ currentStep, setCurrentStep }) => {
+const Aside = ({ currentStep, setCurrentStep , validatePersonalInfo}) => {
   const steps = [
     { number: 1, title: 'YOUR INFO', subtitle: 'Step 1' },
     { number: 2, title: 'SELECT PLAN', subtitle: 'Step 2' },
@@ -9,6 +9,10 @@ const Aside = ({ currentStep, setCurrentStep }) => {
   ]
 
   const handleStepClick = (stepNumber) => {
+    if (currentStep === 0) {
+      const isValid = validatePersonalInfo();
+      if (!isValid) return;
+    }
     setCurrentStep(stepNumber - 1);
   }
 

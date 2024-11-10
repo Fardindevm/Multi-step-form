@@ -93,11 +93,11 @@ function App() {
   return (
     <main className="w-full min-h-screen bg-[var(--alabaster)] flex flex-col xl:flex-row md:justify-center items-center">
       <div className='md:hidden block w-full'>
-        <Aside currentStep={currentStep} setCurrentStep={setCurrentStep} />
+        <Aside currentStep={currentStep} setCurrentStep={setCurrentStep} validatePersonalInfo={validatePersonalInfo}/>
       </div>
       <div className='container w-[90%] md:w-[60%] lg:w-[60%] xl:w-[70%] 2xl:w-[60%] xl:h-[620px] h-[600px] md:h-[720px] bg-[var(--white)] flex flex-col sm:-mt-12 md:mt-0 -mt-16 xl:flex-row rounded-lg shadow-lg p-4'>
         <div className='hidden md:block'>
-          <Aside currentStep={currentStep} setCurrentStep={setCurrentStep} />
+          <Aside currentStep={currentStep} setCurrentStep={setCurrentStep} validatePersonalInfo={validatePersonalInfo}/>
         </div>
         {!isSubmitted ? <div className='flex-1 pt-5 md:pt-8 xl:pt-12 py-7 md:px-[1.8rem] lg:px-[4.1rem] 2xl:px-[5.48rem] justify-center'>
           <div className='min-h-[95%] md:min-h-[92%] 2xl:min-h-[90%] '>
