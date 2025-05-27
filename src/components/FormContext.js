@@ -7,7 +7,6 @@ export const FormProvider = ({ children }) => {
   const [formData, setFormData] = useState({
     plan: '',
     billing: false,
-    // Add other form fields here
   });
 
   const updateFormData = (newData) => {
